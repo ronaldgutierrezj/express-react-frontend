@@ -1,0 +1,18 @@
+<article x-data="{showTools: false, id: '<%= fruit._id %>'}">
+          <h1 x-text="id"></h1>
+          <button x-on:click="id = 'cheese'">Change Id</button>
+          <h2>
+            <%= fruit.name %> - <%= fruit.readyToEat ? "Ripe" : "Not Ripe" %>
+          </h2>
+          <button x-on:click="showTools = !showTools">Show Options</button>
+          <h3><%= fruit.color %></h3>
+          <div x-show="showTools">
+            <a href="/fruits/<%= fruit._id %>/edit"><button>Edit</button></a>
+            <form
+              action="/fruits/<%= fruit._id %>?_method=DELETE "
+              method="post"
+            >
+              <input type="submit" value="Delete" />
+            </form>
+          </div>
+        </article>

@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(https://www.kindpng.com/picc/m/135-1352142_pokeballs-in-catching-rate-order-gen-pixel-art.png);
+    background-size: 5%;
+    font-family: 'Lato', sans-serif;
+}
+
+#title {
+    font-size: 4vw;
+    text-align: center;
+    padding: 100px;
+    background-image: url(https://wallup.net/wp-content/uploads/2017/10/25/484105-anime-Pok%C3%A9mon_trainers-Pok%C3%A9mon-pixel_art-pixels.jpg);
+    background-position: 0px 26vw;
+    font-family: 'Press Start 2P', cursive;
+}
+
+nav {
+    background-color: crimson;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+nav a {
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: tomato;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + #parent {
+    padding-top: 60px;
+}
+
+#parent {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateY(0);
+     }
+}
+
+main {
+    text-align: center;
+}
+
+h2 {
+    margin: auto;
+}
+
+div {
+    padding: 15px 0px 0px 0px;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 70%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+tr {
+    background-color: aliceblue;
+}
+
+#poster, #poster2 {
+    width: 10%;
+    height: 10%;
+}
+
+#error {
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+p, a {
+    margin-left: 8px;
+    font-size: 24px;
+}
+
+#movestable {
+    margin-top: 15px;
+    table-layout: fixed;
+}
+
+@media screen and (max-width: 1024px) {
+    #title {
+        background-image: url(https://wallup.net/wp-content/uploads/2017/10/25/484105-anime-Pok%C3%A9mon_trainers-Pok%C3%A9mon-pixel_art-pixels.jpg);
+        background-size: 100%;
+        background-position: 0px -28vw;
+        padding: 10vw;
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 2vmax;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    body {
+        background-size: 10vmax;
+    }
+
+    td, th {
+        padding: 0px;
+        font-size: 3vmin;
+    }
+
+    #poster, #poster2 {
+        width: 20vmax;
+        height: 20vmax;
+    }
+}

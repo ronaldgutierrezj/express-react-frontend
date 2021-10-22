@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>baked goods</title>  
+        <style type="text/css">
+            body {
+                color: rgb(226, 17, 17);
+                background-color: rgb(233, 248, 16);
+                }
+                </style>
+    </head>
+    <body>
+        <h2>Biscoff</h2>
+        <ul>
+            <% for(let i=0; i< allBiscoff.length;i++){%>
+                <li>
+                    <a href="/bakedgoods/<%=i%>">
+                    <%=allBiscoff[i].name %></a>
+                </li>
+            <%} %>
+        </ul>
+        <br>
+        <br>
+        <nav>
+            <a href="/bakedgoods/new">Create a New Biscoff</a>
+        </nav>
+
+    </body> 
+</html>

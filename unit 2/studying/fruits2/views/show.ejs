@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fruits App</title>
+    </head>
+    <body>
+        <h1>Fruits show page</h1>
+        <br>
+        <a href="/fruits">back to index</a>
+        <br>
+        <br>
+        the <%= fruit.name %> is <%= fruit.color %>
+        <% if (fruit.readyToEat === true) {%>
+            it is ready to eat
+        <%} else {%>
+            it not is ready to eat
+        <%}%>
+    </body>
+</html>    

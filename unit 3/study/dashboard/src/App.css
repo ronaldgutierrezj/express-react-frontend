@@ -1,0 +1,11 @@
+.container{ 
+  background-color: lightgray;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  padding: 10px;
+}
+.sidebar{
+  width: 30%;
+  background-color: gray;
+}

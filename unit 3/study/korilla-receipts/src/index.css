@@ -1,0 +1,21 @@
+.App > h1 {
+  text-align: center;
+}
+.Receipts{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.Receipt{
+  border: 3px dotted orange;
+  padding: 10px;
+  width: 30%;
+  min-width: 300px;
+}
+.Form{
+  width:30%;
+  min-width: 600px;
+  text-align: center;
+  margin: 20px auto
+
+}

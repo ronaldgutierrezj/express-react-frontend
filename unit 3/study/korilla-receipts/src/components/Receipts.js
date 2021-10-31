@@ -1,14 +1,17 @@
 import Receipt from "./Receipt"
-
-const Receipts = (props)=>{
-
-
+function Receipts ({receipts}){
+    const receiptsNew = receipts.map((receipt,index)=>{
+            return (
+                <Receipt 
+                receipt={receipt}
+                key={index}
+                />
+            )
+    })
     return (
         <div className="Receipts">
-            {props.receipts.map((receipt,index)=>{
-                return <Receipt receipt = {receipt} key={index}/>
-            })}
+            {receiptsNew}
         </div>
     )
-}
+};
 export default Receipts
